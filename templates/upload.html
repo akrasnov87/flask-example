@@ -1,0 +1,15 @@
+<!doctype html>
+<!-- https://pythonbasics.org/flask-upload-file/ -->
+<html>
+   <body>
+        {% if name %}
+        <h1>{{ name }}!</h1>
+        {% else %}
+        <form method="post" action = "upload" enctype = "multipart/form-data">
+            <input type="file" name="file" />
+
+            <input type="submit" />
+        </form>
+        {% endif %}
+    </body>
+</html>
